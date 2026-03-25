@@ -1,0 +1,23 @@
+{
+    "ear_threshold": 0.25,
+    "consecutive_frames": 20,
+    "description": "Eye Aspect Ratio (EAR) threshold for drowsiness detection. Values below this indicate closed/droopy eyes.",
+    "landmark_indices": {
+        "right_eye": [
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+        ],
+        "left_eye": [
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+        ]
+    }
+}

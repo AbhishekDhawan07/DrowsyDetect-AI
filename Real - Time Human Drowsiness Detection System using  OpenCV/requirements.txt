@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────────────────────
+#  Drowsiness Detection – Python dependencies
+#  Tested on Python 3.10
+# ─────────────────────────────────────────────────────────────
+
+# Computer vision & image processing
+opencv-python-headless==4.9.0.80   # headless = no Qt dependency (needed on HF Spaces)
+numpy>=1.24,<2.0
+
+# Face detection & landmark prediction
+dlib==19.24.2                       # ships its own CMake build; no extra deps needed
+# NOTE: dlib requires cmake and a C++ compiler at build time.
+#       On Hugging Face Spaces (Debian) add a packages.txt with:
+#           cmake
+#           libopenblas-dev
+#           liblapack-dev
+
+# Geometric / scientific helpers
+scipy>=1.11
+
+# Pillow – image I/O used by Gradio
+Pillow>=10.0
+
+# ─── Hugging Face deployment ──────────────────────────────────
+gradio==4.29.0
+
+# ─── Audio alert (webcam / local only – not needed on Spaces) ─
+# pyttsx3==2.90           # uncomment for local webcam script
+# pywin32; sys_platform == "win32"   # Windows TTS backend for pyttsx3
+
+# ─────────────────────────────────────────────────────────────
+#  Hugging Face Spaces: also create a  packages.txt  with:
+#      cmake
+#      libopenblas-dev
+#      liblapack-dev
+#      libx264-dev      (for MP4 video writing via OpenCV)
+# ─────────────────────────────────────────────────────────────
