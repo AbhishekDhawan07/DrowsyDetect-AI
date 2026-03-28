@@ -64,7 +64,10 @@ The app is **live and free to use** — no installation, no sign-up. Upload any 
 
 ### 🎬 Hugging Face Deployment — Demo Video
 
-https://github.com/user-attachments/assets/Hugging_Face_Drowsiness.mp4
+
+https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
+
+
 
 > *The video above shows the full Hugging Face Spaces deployment in action — uploading a video, adjusting the EAR sensitivity slider, processing frames, and receiving the annotated output with drowsiness statistics.*
 
