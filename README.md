@@ -220,22 +220,18 @@ Where `p1`–`p6` are the 6 eye landmark points ordered clockwise around the eye
 
 ```
 DrowsyDetect-AI/
-│
-├── 📄 app.py                                    # Gradio web app — Hugging Face Spaces entry point
-├── 📄 drowsiness_detector.py                    # Core detection logic + live webcam runner
-│
-├── 🤖 shape_predictor_68_face_landmarks.dat     # dlib 68-point landmark model (via Git LFS, ~100 MB)
-├── ⚙️  ear_threshold.json                        # Persisted EAR threshold configuration
-│
-├── 📋 requirements.txt                          # Python package dependencies
-├── 📦 packages.txt                              # System-level packages (for HF Spaces / apt-get)
-│
-├── 🎬 Local_Test_Drowsiness.mp4                 # Demo: local Python script test
-├── 🌐 Web_App_drowsiness_Gradio.mp4             # Demo: full Gradio web app walkthrough
-├── 📷 Drowsiness_Webcam_for_Gradio.mp4          # Demo: live webcam feeding into Gradio
-├── 🤗 Hugging_Face_Drowsiness.mp4               # Demo: Hugging Face Spaces deployment output
-│
-└── 📖 README.md                                 # This file
+├── 📄 README.md                          ← You are here!!
+└── 📂 Real - Time Human Drowsiness Detection System/
+    ├── 📄 app.py
+    ├── 📄 drowsiness_detector.py
+    ├── 🤖 shape_predictor_68_face_landmarks.dat
+    ├── ⚙️  ear_threshold.json
+    ├── 📋 requirements.txt
+    ├── 📦 packages.txt
+    ├── 🎬 Local_Test_Drowsiness.mp4
+    ├── 🌐 Web_App_drowsiness_Gradio.mp4
+    ├── 📷 Drowsiness_Webcam_for_Gradio.mp4
+    └── 🤗 Hugging_Face_Drowsiness.mp4
 ```
 
 ### Key Files Explained
