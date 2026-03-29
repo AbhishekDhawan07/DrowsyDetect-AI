@@ -170,7 +170,7 @@ EAR  =  ────────────────────────
 
 Where `p1`–`p6` are the 6 eye landmark points ordered clockwise around the eye. When the eye is **fully open**, EAR hovers around `0.28–0.35`. As eyes **close or droop**, EAR falls toward `0.0`.
 
-### Pipeline — Step by Step
+### Pipeline - Step by Step
 
 ```
   Input Frame (BGR)
