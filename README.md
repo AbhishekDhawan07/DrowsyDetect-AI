@@ -39,7 +39,7 @@
 
 ## 📌 About the Project
 
-**DrowsyDetect-AI** is a real-time drowsiness detection system that monitors a person's eye activity using computer vision and facial landmark geometry. It calculates the **Eye Aspect Ratio (EAR)** - a ratio derived from the vertical and horizontal distances of 6 eye landmark points — to detect whether eyes are drooping or closing.
+**DrowsyDetect-AI** is a real-time drowsiness detection system that monitors a person's eye activity using computer vision and facial landmark geometry. It calculates the **Eye Aspect Ratio (EAR)** - a ratio derived from the vertical and horizontal distances of 6 eye landmark points - to detect whether eyes are drooping or closing.
 
 When the EAR drops **below a configurable threshold** for a sustained number of frames, the system flags the person as drowsy and triggers an alert.
 
