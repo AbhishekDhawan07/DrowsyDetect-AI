@@ -255,7 +255,7 @@ DrowsyDetect-AI/
 ### Prerequisites
 - Python 3.10+
 - CMake (required to compile dlib)
-- Webcam — only needed for live mode
+- Webcam - only needed for live mode
 
 ### 1 - Clone the Repository
 
