@@ -50,7 +50,7 @@ The system works in **two modes**:
 | 🎥 **Live Webcam** | Real-time detection with OpenCV window + audio alert via `pyttsx3` |
 | 📤 **Video Upload** | Upload any pre-recorded video via the Gradio web app and receive an annotated output |
 
-> 💡 Originally designed for **driver safety**, DrowsyDetect-AI is applicable to any human fatigue monitoring scenario — students, security personnel, remote workers, and more.
+> 💡 Originally designed for **driver safety**, DrowsyDetect-AI is applicable to any human fatigue monitoring scenario - students, security personnel, remote workers, and more.
 
 ---
 
