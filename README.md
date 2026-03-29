@@ -13,7 +13,7 @@
 
 <br/>
 
-> **A production-ready, computer-vision-powered drowsiness detection system — deployed live as an interactive Gradio web app on Hugging Face Spaces.**
+> **A production-ready, computer-vision-powered drowsiness detection system - deployed live as an interactive Gradio web app on Hugging Face Spaces.**
 
 <br/>
 
@@ -39,7 +39,7 @@
 
 ## 📌 About the Project
 
-**DrowsyDetect-AI** is a real-time drowsiness detection system that monitors a person's eye activity using computer vision and facial landmark geometry. It calculates the **Eye Aspect Ratio (EAR)** — a ratio derived from the vertical and horizontal distances of 6 eye landmark points — to detect whether eyes are drooping or closing.
+**DrowsyDetect-AI** is a real-time drowsiness detection system that monitors a person's eye activity using computer vision and facial landmark geometry. It calculates the **Eye Aspect Ratio (EAR)** - a ratio derived from the vertical and horizontal distances of 6 eye landmark points — to detect whether eyes are drooping or closing.
 
 When the EAR drops **below a configurable threshold** for a sustained number of frames, the system flags the person as drowsy and triggers an alert.
 
@@ -58,7 +58,7 @@ The system works in **two modes**:
 
 > **🔗 [https://huggingface.co/spaces/Abhish07/real-time-human-drowsiness-system](https://huggingface.co/spaces/Abhish07/real-time-human-drowsiness-system)**
 
-The app is **live and free to use** — no installation, no sign-up. Upload any video and get instant drowsiness analysis with a fully annotated output.
+The app is **live and free to use** - no installation, no sign-up. Upload any video and get instant drowsiness analysis with a fully annotated output.
 
 <br/>
 
@@ -69,7 +69,7 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 
 
 
-> *The video above shows the full Hugging Face Spaces deployment in action — uploading a video, adjusting the EAR sensitivity slider, processing frames, and receiving the annotated output with drowsiness statistics.*
+> *The video above shows the full Hugging Face Spaces deployment in action - uploading a video, adjusting the EAR sensitivity slider, processing frames, and receiving the annotated output with drowsiness statistics.*
 
 ---
 
@@ -95,8 +95,8 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 
 - **68-Point Facial Landmark Detection** using dlib's pre-trained shape predictor
 - **Eye Aspect Ratio (EAR)** computed for both eyes simultaneously and averaged
-- **Consecutive frame analysis** — avoids false positives by requiring sustained low EAR
-- **Real-time annotation** — eye contours, EAR value, and status text drawn directly on every frame
+- **Consecutive frame analysis** - avoids false positives by requiring sustained low EAR
+- **Real-time annotation** - eye contours, EAR value, and status text drawn directly on every frame
 
 </details>
 
@@ -104,10 +104,10 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 <summary><b>🎛️ Fully Configurable</b></summary>
 <br/>
 
-- **Adjustable EAR threshold** — tune sensitivity live via a Gradio slider (range: 0.10 – 0.40)
-- **Persistent threshold storage** — settings saved to `ear_threshold.json`, survive app restarts
-- **Per-session override** — change the threshold mid-session without restarting
-- **Configurable consecutive frames** — control how many frames of low EAR trigger an alert
+- **Adjustable EAR threshold** - tune sensitivity live via a Gradio slider (range: 0.10 – 0.40)
+- **Persistent threshold storage** - settings saved to `ear_threshold.json`, survive app restarts
+- **Per-session override** - change the threshold mid-session without restarting
+- **Configurable consecutive frames** - control how many frames of low EAR trigger an alert
 
 </details>
 
@@ -127,8 +127,8 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 <br/>
 
 - Real-time OpenCV window with live eye-contour overlay
-- **Audio alert** via `pyttsx3` — speaks *"Wake up! Drowsiness detected."*
-- Alert **throttling** — no repeated alerts within 3 seconds
+- **Audio alert** via `pyttsx3` - speaks *"Wake up! Drowsiness detected."*
+- Alert **throttling** - no repeated alerts within 3 seconds
 - Webcam session **auto-recorded** and saved locally with a timestamped filename
 
 </details>
@@ -138,9 +138,9 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 <br/>
 
 - Two-tab interface: **🎬 Video Analysis** and **⚙️ Settings / Save Threshold**
-- **Model caching** — dlib models loaded once at startup, reused across all requests
+- **Model caching** - dlib models loaded once at startup, reused across all requests
 - Annotated output video rendered and downloadable directly in the browser
-- Deployed on **Hugging Face Spaces** — accessible from any browser, globally
+- Deployed on **Hugging Face Spaces** - accessible from any browser, globally
 
 </details>
 
@@ -148,13 +148,13 @@ https://github.com/user-attachments/assets/5677f71b-acb5-4c27-b84c-df7f4cb20825
 
 ## 📊 Dataset
 
-This project does not use a training dataset — it relies on a **pre-trained dlib model** for facial landmark detection.
+This project does not use a training dataset - it relies on a **pre-trained dlib model** for facial landmark detection.
 
 | Model | Source | Size |
 |-------|--------|------|
 | `shape_predictor_68_face_landmarks.dat` | [dlib.net](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) | ~100 MB |
 
-The model detects **68 facial landmarks** per face. Eye landmarks (points 36–47) are extracted to compute the Eye Aspect Ratio (EAR) in real time — no custom training required.
+The model detects **68 facial landmarks** per face. Eye landmarks (points 36–47) are extracted to compute the Eye Aspect Ratio (EAR) in real time - no custom training required.
 
 ---
 
