@@ -257,20 +257,20 @@ DrowsyDetect-AI/
 - CMake (required to compile dlib)
 - Webcam — only needed for live mode
 
-### 1 — Clone the Repository
+### 1 - Clone the Repository
 
 ```bash
 git clone https://github.com/Abhish07/DrowsyDetect-AI.git
 cd DrowsyDetect-AI
 ```
 
-### 2 — Install Python Dependencies
+### 2 - Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3 — Download the dlib Landmark Model
+### 3 - Download the dlib Landmark Model
 
 > ⚠️ The model file is ~100 MB. Download it separately and place it in the project root.
 
@@ -288,7 +288,7 @@ After extraction, confirm the file is at:
 DrowsyDetect-AI/shape_predictor_68_face_landmarks.dat
 ```
 
-### ▶️ Mode 1 — Live Webcam Detection
+### ▶️ Mode 1 - Live Webcam Detection
 
 ```bash
 python drowsiness_detector.py
@@ -299,7 +299,7 @@ python drowsiness_detector.py
 - Plays audio alert when drowsiness is detected
 - Press **`q`** to quit — session auto-saved as `webcam_YYYYMMDD_HHMMSS.mp4`
 
-### ▶️ Mode 2 — Gradio Web App (Local)
+### ▶️ Mode 2 - Gradio Web App (Local)
 
 ```bash
 python app.py
@@ -309,7 +309,7 @@ python app.py
 - A **public shareable URL** is also printed (via Gradio's `share=True`)
 - Upload any `.mp4` or `.avi` file and click **Analyse Video**
 
-### ▶️ Mode 3 — Hugging Face Spaces (No Install Required)
+### ▶️ Mode 3 - Hugging Face Spaces (No Install Required)
 
 > 🔗 **[https://huggingface.co/spaces/Abhish07/real-time-human-drowsiness-system](https://huggingface.co/spaces/Abhish07/real-time-human-drowsiness-system)**
 
