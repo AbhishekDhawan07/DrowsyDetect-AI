@@ -214,7 +214,7 @@ Where `p1`–`p6` are the 6 eye landmark points ordered clockwise around the eye
 
 | State | What You See on Frame |
 |-------|-----------------------|
-| 😴 **Drowsy** | Red border around entire frame · `DROWSINESS DETECTED!` · `WAKE UP!` · EAR value in cyan |
+| 😴 **Drowsy** | Red border around entire frame · `DROWSINESS DETECTED!`  `WAKE UP!`  EAR value in cyan |
 | 😊 **Awake** | No border · `Alert & Awake` in green · EAR value in cyan |
 
 ---
