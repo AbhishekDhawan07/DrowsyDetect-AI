@@ -297,7 +297,7 @@ python drowsiness_detector.py
 - Opens your default webcam (`camera_index=0`)
 - Shows a real-time OpenCV window with annotated eye landmarks
 - Plays audio alert when drowsiness is detected
-- Press **`q`** to quit — session auto-saved as `webcam_YYYYMMDD_HHMMSS.mp4`
+- Press **`q`** to quit - session auto-saved as `webcam_YYYYMMDD_HHMMSS.mp4`
 
 ### ▶️ Mode 2 - Gradio Web App (Local)
 
